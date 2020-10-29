@@ -6,7 +6,13 @@
     "type": "object",
     "properties": {
         "Name": {"type":"string"},
-        "Author": {"type":"string"}
+        "Author": {"type":"string"},
+        "Setting": {
+            "type":"object",
+            "properties": {
+                "Time": {"type":"string"}
+            }
+        }
     }
 }
   
