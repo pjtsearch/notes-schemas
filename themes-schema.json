@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "JSON Schema for book themes",
+    "description": "JSON Schema for book themes",
+    "additionalProperties": false,
+    "type": "array",
+    "items": {
+        "type": "object",
+        "description": "A theme",
+        "additionalProperties": false,
+        "properties": {
+            "Name": {"type":"string"},
+            "Occurrences": {
+                "type":"array",
+                "additionalProperties": false,
+                "items": { "$ref": "common-schema.json#/definitions/page-occurrence" }
+            }
+        }
+    }
+}
+  

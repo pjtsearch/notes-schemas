@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "JSON Schema for book characters",
+    "description": "JSON Schema for book characters",
+    "additionalProperties": false,
+    "type": "array",
+    "items": {
+        "type": "object",
+        "description": "A character",
+        "additionalProperties": false,
+        "properties": {
+            "Name": {"type":"string"},
+            "Introduced": {"type":"integer"},
+            "Props": {
+                "type":"array",
+                "additionalProperties": false,
+                "items": { "$ref": "common-schema.json#/definitions/page-occurrence" }
+            }
+        }
+    }
+}
+  
